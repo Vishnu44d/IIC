@@ -55,7 +55,7 @@
                 <li><a href="#about" class="center white-text fs"><h3 >About</h3></a></li><br/>
                 <li><a href="#announcements" class="center white-text fs"><h3 >Announcements</h3></a></li><br/>
                 <li><a href="#team" class="center white-text fs"><h3 >Team</h3></a></li><br/>
-                <li><a href="http://www.edc-iiests.in" class="btn blue center"><h3>E-Cell</h3></a></li><br/>
+                <li><a href="http://www.edc-iiests.in" class="blue center"><h3>E-Cell</h3></a></li><br/>
                 <li><a href="#links" class="center white-text fs"><h3 >Links</h3></a></li><br/>
                 <li><a href="#footer" class="center white-text fs"><h3 >Contacts</h3></a></li><br/>
                 </div>
