@@ -160,7 +160,7 @@
             <span><h1>Team</h1></span>
             <div class="cards">
             <?php
-                $handle = fopen("contents/teams1.csv", "r");
+                $handle = fopen("contents/teams.csv", "r");
                 for ($i = 0; $row = fgetcsv($handle ); ++$i){
                     echo '
                     <div class="card team-card-2">
