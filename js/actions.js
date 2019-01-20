@@ -101,3 +101,44 @@ $(document).ready(function(){
   }
   );
 });
+
+
+(function($) {
+  var $window = $(window),
+    $html = $('nav');
+      //console.log($window.width());
+  function resize() {
+      if ($window.width() < 600 || $window.width() == 980) {
+        //console.log($window.width());
+          return $html.addClass('mob-head');
+      }
+      //console.log($window.width());
+
+      $html.removeClass('mob-head');
+  }
+
+  $window
+      .resize(resize)
+      .trigger('resize');
+})(jQuery);
+
+
+
+(function($) {
+  var $window = $(window),
+    $html = $('#link_col');
+      //console.log($window.width());
+  function resize() {
+      if ($window.width() < 600 || $window.width() == 980) {
+        //console.log($window.width());
+          return $html.addClass('m5');
+      }
+      //console.log($window.width());
+
+      $html.removeClass('m5');
+  }
+
+  $window
+      .resize(resize)
+      .trigger('resize');
+})(jQuery);

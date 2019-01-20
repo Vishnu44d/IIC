@@ -20,6 +20,7 @@
             <div class="navbar-fixed">
                 <nav class="white">
                     <div class="nav-wrapper">
+                        <a href="#" data-target="slide-out" class="sidenav-trigger black-text mob-ico right"><<image src="img/menu-ico.png" height="90%" style="padding-right: 10px; margin-bottom: 5px; margin-top: 18px;"></a>
                         <a href="http://www.iiests.ac.in/">
                         <image src="img/iiest-logo.png" height="90%" style="padding-left: 4%; margin-bottom: 5px; padding-top: 5px;" />
                         </a>
@@ -29,28 +30,42 @@
                         <a href="#">
                         <image src="img/innovation_logo.png" height="90%" style="padding-left: 10px; margin-bottom: 5px; padding-top: 5px;"/>
                         </a>
-                        <a href="#" data-target="mobile-view" class="sidenav-trigger"><i class="material-icons"><span class="black-text">arrow_forward</span></i></a>
+                        <!--a href="#" data-target="mobile-view" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a-->
+                        
                         <ul class="right hide-on-med-and-down " >
                             <li><a href="#home " ><span class="black-text">Home</span></a></li>
                             <li><a href="#about"><span class="black-text">About</span></a></li>
                             <li><a href="#announcements"><span class="black-text">Announcements</span></a></li>
                             <li><a href="#team"><span class="black-text">Team</span></a></li>
                             <li><a href="http://www.edc-iiests.in" class="pulse btn blue"><span class="white-text">E-Cell</span></a></li>
+                            <li><a href="#links"><span class="black-text">Links</span></a></li>
                             <li><a href="#footer"><span class="black-text">Contacts</span></a></li>
                             
                         </ul>
                     </div>
+                    </div>
                 </nav>
             </div>
-
-            <ul class="sidenav mob-menu" id="mobile-view">
-                <li><a href="#home " ><span class="black-text">Home</span></a></li>
-                <li><a href="#about"><span class="black-text">About</span></a></li>
-                <li><a href="#announcements"><span class="black-text">Announcements</span></a></li>
-                <li><a href="#team"><span class="black-text">Team</span></a></li>
-                <li class="men-item1"><a href="www.edc-iiests.in" class="wave btn-small blue"><span class="white-text">E-Cell</span></a></li>
-                <li><a href="#footer"><span class="black-text">Contacts</span></a></li>
+            
+            <ul id="slide-out" class="sidenav menue-mob">
+                <li><div class="user-view ">
+                <div style="margin-top: 4%; height: 4%;">    
+                </div>
+                <li><a href="#home " class="center white-text fs"><h3>Home</h3></a></li><br/>
+                <li><a href="#about" class="center white-text fs"><h3 >About</h3></a></li><br/>
+                <li><a href="#announcements" class="center white-text fs"><h3 >Announcements</h3></a></li><br/>
+                <li><a href="#team" class="center white-text fs"><h3 >Team</h3></a></li><br/>
+                <li><a href="http://www.edc-iiests.in" class="btn blue center"><h3>E-Cell</h3></a></li><br/>
+                <li><a href="#links" class="center white-text fs"><h3 >Links</h3></a></li><br/>
+                <li><a href="#footer" class="center white-text fs"><h3 >Contacts</h3></a></li><br/>
+                </div>
+                
             </ul>
+            
+
+
+
+
             <div  class="foot-container">
             <div class="row home-wrap">
                 <div class="col s8 offset-s100">
@@ -185,6 +200,27 @@
             ?>
             </div>
         </div>
+        </section>
+
+
+        <section id="links">
+            <br/><br/><br/>
+            <div class="foot-container">
+                <span class="black-text"> <h3 class="my-font">Useful Links</h3></span>
+                <div class="row">
+                    <?php
+                        $handle = fopen("contents/links.csv", "r");
+                            for ($i = 0; $row = fgetcsv($handle ); ++$i) {
+                                echo '
+                                <div id="link_col" class="col m4">
+                                    <a class="black-text left inline-icon" href="'.$row[1].'"><image src="img/link_icons/'.$row[0].'.png" height="100px" style="margin-left: 1%; margin-bottom: 5px; padding-top: 5px;" /></a>
+                                </div>';
+                            }
+                            fclose($handle);
+                    ?>
+                    <hr/>
+                </div>
+            </div>
         </section>
 
         <footer class="page-footer indigo darken-4" id="footer">
