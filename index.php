@@ -20,7 +20,7 @@
             <div class="navbar-fixed">
                 <nav class="white">
                     <div class="nav-wrapper">
-                        <a href="http://iiests.ac.in">
+                        <a href="http://www.iiests.ac.in/">
                         <image src="img/iiest-logo.png" height="90%" style="padding-left: 4%; margin-bottom: 5px; padding-top: 5px;" />
                         </a>
                         <a href="#">
@@ -33,22 +33,23 @@
                         <ul class="right hide-on-med-and-down " >
                             <li><a href="#home " ><span class="black-text">Home</span></a></li>
                             <li><a href="#about"><span class="black-text">About</span></a></li>
-                            <li><a href="#team"><span class="black-text">Team</span></a></li>
-                            <li><a href="#footer"><span class="black-text">Contacts</span></a></li>
-                            <li><a href="www.edc-iiests.in" class="pulse btn blue"><span class="white-text">E-Cell</span></a></li>
                             <li><a href="#announcements"><span class="black-text">Announcements</span></a></li>
+                            <li><a href="#team"><span class="black-text">Team</span></a></li>
+                            <li><a href="http://www.edc-iiests.in" class="pulse btn blue"><span class="white-text">E-Cell</span></a></li>
+                            <li><a href="#footer"><span class="black-text">Contacts</span></a></li>
+                            
                         </ul>
                     </div>
                 </nav>
             </div>
 
             <ul class="sidenav mob-menu" id="mobile-view">
-                <li class="men-item"><a href="#home">Home</a></li>
-                <li class="men-item1"><a href="#about">About</a></li>
-                <li class="men-item1"><a href="#team">Team</a></li>
-                <li class="men-item1"><a href="#footer">Contacts</a></li>
+                <li><a href="#home " ><span class="black-text">Home</span></a></li>
+                <li><a href="#about"><span class="black-text">About</span></a></li>
+                <li><a href="#announcements"><span class="black-text">Announcements</span></a></li>
+                <li><a href="#team"><span class="black-text">Team</span></a></li>
                 <li class="men-item1"><a href="www.edc-iiests.in" class="wave btn-small blue"><span class="white-text">E-Cell</span></a></li>
-                <li class="men-item1"><a href="#announcements">Announcements</a></li>
+                <li><a href="#footer"><span class="black-text">Contacts</span></a></li>
             </ul>
             <div  class="foot-container">
             <div class="row home-wrap">
@@ -70,7 +71,7 @@
             <div class="row">
                 <div class="col s6">
                 <div class="about-container">
-                    <span class="black-text"><h1>About</h1></span>
+                    <span class="black-text"><h1 class="my-font">About</h1></span>
                     <p>
                     <?php
                         $handle = fopen("contents/about.txt", "r");
@@ -104,7 +105,7 @@
         <div  class="foot-container">
             <div class="row">
                 <div class="col s12">
-                    <span class="black-text"> <h1>Announcements</h1></span><br/>
+                    <span class="black-text"> <h1 class="my-font">Announcements</h1></span><br/>
                     <a href="contents/announcements.pdf" class="grey-text"> Download the complete schedule here.<i class="inline-icon material-icons">file_download</i></a>
                 </div>
             </div> 
@@ -116,9 +117,6 @@
                             echo '
                             <li>
                                 <img src="img/slider/'.$row[1].'.jpg">  
-                                <div class="caption center-align cap">
-                                    <h3 class="cap-text">'.$row[0].'</h3>
-                                </div> 
                             </li>';
                         }
                         fclose($handle);      
@@ -157,7 +155,7 @@
         <section id="team">
             <br><br><br>
         <div  class="foot-container">
-            <span><h1>Team</h1></span>
+            <div class="center"><span class="center"><h1 class="center">Team</h1></span></div>
             <div class="cards">
             <?php
                 $handle = fopen("contents/teams.csv", "r");
@@ -222,8 +220,8 @@
             <div class="container">
             © 2019 Copyright IIC-IIEST Shibpur
             <a class="grey-text text-lighten-5 right" href="https://www.facebook.com/iic.iiests/"><image src="img/facebook.svg" height="30px" style="padding-left: 4%; margin-bottom: 5px; padding-top: 5px;" /></a>
-            <a class="grey-text text-lighten-5 right" href="https://www.facebook.com/iic.iiests/"><image src="img/linkedin.svg" height="30px" style="padding-left: 4%; margin-bottom: 5px; padding-top: 5px; padding-right:10px;" /></a>
-            <div class="center"><span class="grey-text text-lighten-7 center vishnu">Designed and maintaine by Vishnu Deo Gupta</span></div>
+            <a class="grey-text text-lighten-5 right" href="https://www.linkedin.com/company/iic-iiests/"><image src="img/linkedin.svg" height="30px" style="padding-left: 4%; margin-bottom: 5px; padding-top: 5px; padding-right:10px;" /></a>
+            <div class="center"><span class="grey-text text-lighten-7 center vishnu">Designed and maintained by Vishnu Deo Gupta</span></div>
         </div>
           </div>
         </footer>

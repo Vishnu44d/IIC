@@ -18,7 +18,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: Arial, Helvetica, sans-serif;
 }    
 #home{
     height: 100vh;
@@ -64,7 +64,7 @@ h1{
     vertical-align: middle;
 }
 #about h1{
-    font-family: arial black;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     color:black;
     margin: 0px;
@@ -73,7 +73,7 @@ h1{
     vertical-align: middle;
 }
 #announcements h1{
-    font-family: arial black;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     color: rgb(0, 0, 0);
     margin: 0px;
@@ -82,7 +82,7 @@ h1{
     vertical-align: middle;
 }
 #team h1{
-    font-family: arial black;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     color:black;
     margin-left: 10px;
@@ -435,3 +435,11 @@ h1{
     }
 }
 
+
+.my-font{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.team-card-2 h2{
+    font-family: 'Arial Narrow', sans-serif;
+}
